@@ -33,7 +33,6 @@ const App = () => {
       console.log(worker.current)
 
       worker.current.addEventListener('message', (e) => {
-        console.log(e, '+++++++++++++++++++')
         switch (e.data.status) {
           case 'initiate':
             setReady(false)
@@ -71,9 +70,6 @@ const App = () => {
     }
 
     return () => {
-      // onUnMounted
-      // console.log('unmounted')
-      // worker.current = null
     }
   })
 

@@ -31,7 +31,6 @@ const LANGUAGES = {
 }
 
 const LanguageSelector = (props) => {
-    console.log(props);
     const { type, defaultLanguage, onChange } = props
     return (
         <div className="language-selector">
